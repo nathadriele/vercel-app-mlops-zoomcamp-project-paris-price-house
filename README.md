@@ -1,8 +1,8 @@
 # Demonstration on Vercel: Predicting house prices in Paris
 
-## MLOps Project: Property Price Forecast in Paris
+Available at: https://vercel-app-mlops-zoomcamp-project-paris-price-house.vercel.app.
 
-![image](https://github.com/user-attachments/assets/568874a2-4421-4f5b-9f3d-d67d81030113)
+## MLOps Project: Property Price Forecast in Paris
 
 ### Overview
 This project is developed as part of the MLOps Zoomcamp course by DataTalks.Club. It focuses on predicting house prices in the urban environment of Paris based on various features. The primary goal is to provide an accurate estimation of property prices using machine learning models, aiding potential buyers, real estate agents, and developers in making informed decisions.
@@ -11,23 +11,23 @@ This project is developed as part of the MLOps Zoomcamp course by DataTalks.Club
 The dataset used in this project consists of imaginary data on house prices in Paris. The attributes are all numeric and represent various features of the properties. This dataset is valuable for educational purposes, practice, and gaining knowledge in machine learning and data analysis.
 
 ### Attributes:
-- squareMeters: Total area of the property in square meters.
-- numberOfRooms: Total number of rooms in the property.
-- hasYard: Indicates whether the property has a yard.
-- hasPool: Indicates whether the property has a pool.
-- floors: Number of floors in the property.
-- cityCode: Zip code of the property location.
-- cityPartRange: A range indicating the exclusivity of the neighborhood.
-- numPrevOwners: Number of previous owners of the property.
-- made: Year the property was built.
-- isNewBuilt: Indicates if the property is newly built.
-- hasStormProtector: Indicates if the property has storm protection.
-- basement: Basement area in square meters.
-- attic: Attic area in square meters.
-- garage: Garage size in square meters.
-- hasStorageRoom: Indicates if the property has a storage room.
-- hasGuestRoom: Number of guest rooms in the property.
-- price: Predicted price of the property.
+- `squareMeters`: Total area of the property in square meters.
+- `numberOfRooms`: Total number of rooms in the property.
+- `hasYard`: Indicates whether the property has a yard.
+- `hasPool`: Indicates whether the property has a pool.
+- `floors`: Number of floors in the property.
+- `cityCode`: Zip code of the property location.
+- `cityPartRange`: A range indicating the exclusivity of the neighborhood.
+- `numPrevOwners`: Number of previous owners of the property.
+- `made`: Year the property was built.
+- `isNewBuilt`: Indicates if the property is newly built.
+- `hasStormProtector`: Indicates if the property has storm protection.
+- `basement`: Basement area in square meters.
+- `attic`: Attic area in square meters.
+- `garage`: Garage size in square meters.
+- `hasStorageRoom`: Indicates if the property has a storage room.
+- `hasGuestRoom`: Number of guest rooms in the property.
+- `price`: Predicted price of the property.
 
 ### Project Components
 ### Frontend
