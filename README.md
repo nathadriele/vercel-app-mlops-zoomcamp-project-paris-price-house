@@ -2,6 +2,9 @@
 
 Available at: https://vercel-app-mlops-zoomcamp-project-paris-price-house.vercel.app.
 
+![gif](https://github.com/user-attachments/assets/91f6586c-e5fa-4c33-882e-c2980e928cf5)
+
+
 ## MLOps Project: Property Price Forecast in Paris
 
 ### Overview
