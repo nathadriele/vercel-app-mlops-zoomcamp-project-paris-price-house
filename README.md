@@ -32,13 +32,6 @@ The dataset used in this project consists of imaginary data on house prices in P
 - `hasGuestRoom`: Number of guest rooms in the property.
 - `price`: Predicted price of the property.
 
-### Project Components
-### Frontend
-The frontend of the project is a user-friendly interface developed to input property details and get an estimated price. The input fields include all the attributes listed above, allowing users to enter specific details about a property.
-
-### Backend
-The backend is powered by a machine learning model that has been trained on the provided dataset. The model takes the input features and predicts the property price based on the learned patterns from the data.
-
 ### Deployment
 The project is deployed on Vercel, making it easily accessible for users. The deployment ensures that users can input property details through the frontend and get real-time price predictions.
 
