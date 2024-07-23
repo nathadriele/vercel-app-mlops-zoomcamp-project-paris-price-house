@@ -1,13 +1,8 @@
 # MLOps Project: Property Price Forecast in Paris
 
+![Captura de tela 2024-07-22 182910](https://github.com/user-attachments/assets/82243659-6852-4618-a66f-6d66b3f7c068)
+
 **Deployment URL**: https://vercel-app-mlops-zoomcamp-project-paris-price-house.vercel.app.
-
-![gif](https://github.com/user-attachments/assets/9dc3cf89-8f41-470d-9008-83a695085926)
-
-----------------------------------------
-
-### About the Course
-This project focuses on predicting property prices in the urban environment of Paris based on various characteristics. The primary objective is to provide accurate price estimates for properties using machine learning models, aiding potential buyers, real estate agents, and developers in making informed decisions. The project is part of the MLOps Zoomcamp course by DataTalks.Club, designed to teach practical MLOps skills and methodologies for deploying and managing machine learning models at scale.
 
 ----------------------------------------
 
@@ -83,149 +78,60 @@ All attributes are numeric variables and are listed below:
       </div>
 
 ------------------------------------------------
+### Paris Price House App
 
-### Pre-requisites and Frameworks and Tools Used
-To successfully execute this MLOps project focused on predicting house prices in Paris, the following prerequisites and tools are required:
+This is a Next.js and Python based ML application for house price prediction in Paris, France.
 
-- `Git`: Used for version control to manage and track changes in the project codebase, facilitating collaboration and continuous integration.
-- `GitHub`: Platforms for hosting Git repositories, enabling code collaboration, continuous integration (CI), and continuous deployment (CD).
-- `Visual Studio Code`: An integrated development environment (IDE) used for debugging and managing Python code and other files, providing a robust environment for code development.
-- `Jupyter Notebook`: An open-source web application used for data exploration, analysis, and visualization, allowing interactive development and testing of machine learning models.
-- `PostgreSQL`: A powerful, open-source relational database management system used for storing and retrieving structured data, ensuring data persistence and integrity.
-- `Anaconda`: A distribution of Python for scientific computing and data science, used for package management and creating virtual environments to manage dependencies.
-- `Docker`: A platform used for containerization, enabling the application to run consistently across different environments by packaging all dependencies and configurations into a container.
-- `Flask`: A lightweight web framework for Python, used for deploying the machine learning model as a web service, providing an API for interaction with the model.
-- `Grafana`: An open-source platform for monitoring and observability, used for visualizing and monitoring the performance of the prediction model, ensuring its reliability and efficiency.
-- `MLflow`: An open-source platform for managing the machine learning lifecycle, used for experiment tracking, model logging, and deployment, ensuring reproducibility and versioning of models.
-- `Node.js`: For building scalable network applications, useful for developing the front-end interface or microservices in the project.
-- `Prefect`: A workflow orchestration tool used for automating, scheduling, and monitoring data workflows, ensuring the smooth execution of data pipelines.
-- `Pandas`: A data manipulation and analysis library for Python, used for handling structured data and performing exploratory data analysis (EDA).
-- `Scikit-learn`: A machine learning library for Python, used for building, training, and evaluating the prediction model, providing various tools and algorithms for predictive modeling.
-- `Matplotlib`: A plotting library for Python, used for data visualization to create static, interactive, and animated plots, helping in data analysis and presentation.
-- `Vercel`: A cloud platform used for hosting and deploying web applications, ensuring the deployment and scalability of the project's web components.
+**Getting Started**
+---------------
 
-------------------------------------------------
-### Project Execution 
+### Prerequisites
 
-### Clone the Repository mlops-zoomcamp-project-paris-price-house
-`git clone https://github.com/nathadriele/mlops-zoomcamp-project-paris-price-house.git
-cd mlops-zoomcamp-project-paris-price-house`
+* Node.js installed on your machine
+* Python installed on your machine
 
-### Create and Activate the Virtual Environment
-This requires Anaconda Environment
+### Installation
 
-`conda create -n project-paris-price-house python=3.10`
-`conda activate project-paris-price-house`
+1. Create a new Next.js app using the latest version of `create-next-app`:
+```
+npx create-next-app@latest paris-price-house
+```
+2. Change into the newly created app directory:
+```
+cd paris-price-house
+```
+3. Install Axios, a popular HTTP client library:
+```
+npm install axios
+```
 
-If you don't have pip installed:
+### Running the App
 
-`conda install pip`
-
-### Install All Dependencies
-`pip install -r requirements.txt`
-
-### Data Exploration and Preprocessing
-Start the model_to_predict_property_prices_paris.ipynb notebook with Jupyter Notebook:
-
-`jupyter notebook`
-
-### Model Deployment
-Start the Flask server to deploy the model:
-
-`python app.py`
-
-### Create a New Next.js Project
-This requires Node.js
-
-`npx create-next-app@latest project-paris-price-house`
-
-This will create a new Next.js project in a directory called project-paris-price-house.
-
-### Change to the Project Directory
-`cd project-paris-price-house`
-
-### Install Required Dependencies, Including Axios
-`npm install axios`
-
-### Running the Application
-1. Download the `app.py` and `page.tsx` Files
-
-Ensure that you have downloaded the `app.py` and `page.tsx` files into the `project-paris-price-house` folder.
-
-2. Run the Python Script
-
-This script will perform the necessary calculations and provide the predictions.
-
-`python app.py`
-
-3. Start the Next.js Development Server
-
-`npx next`
-
-This will start the development server and make the application available at http://localhost:3000.
-
-------------------------------------------------
-### MlFlow
-
-The image shows a representation of the MLflow lifecycle. The main components include Experiments, Models, and the Registry. Highlights integration with various machine learning libraries and frameworks.
-
-![mlflow](https://github.com/user-attachments/assets/e3701b0c-521a-4c94-9b5e-282bb979a290)
-
---------------------------------------------------
-
-### Prefect for Model Orchestration
-
-This image is related to the Prefect workflow. Shows a hierarchical structure of tasks within the pipeline. The structure indicates the dependency between different tasks and the order of execution.
-
-![prefect 2](https://github.com/user-attachments/assets/d46cc1e7-1a73-4aa1-b7c9-06b246598731)
-
-### Using Flask API and Docker
-- Deploy the model using a simple model's pickle file.
-- Create a Flask API to serve the model.
-- Use Docker to containerize the Flask application.
-
-### Model Monitoring
-
-The image shows the workflow diagram with Prefect. Shows a data pipeline with steps including extraction, transformation, validation, and loading. There are arrows indicating the sequence of operations and decisions in the workflow.
-
-![prefect 1](https://github.com/user-attachments/assets/a0e161ce-b18b-4d76-b75b-af3c05ed0aea)
+1. Run the Python script that fetches data from an external API:
+```
+python app.py
+```
+2. Start the Next.js development server:
+```
+npx next
+```
+This will start the development server and make the app available at `http://localhost:3000`.
 
 --------------------------------------------------
 
 ### Deployment vercel-app-mlops-zoomcamp-project-paris-price-house.vercel.app
+
 The project is deployed on Vercel, making it easily accessible for users. The deployment ensures that users can input property details through the frontend and get real-time price predictions.
 
 ### How to Use app vercel "Property Price Forecast in Paris"
-1. Fill in all fields with property information: Enter information about the property in the input fields provided in the interface. Only positive numbers are allowed.
-2. For fields where there is no information to be entered, they must be filled in with 0, indicating the absence.
-3. If any field is not filled in, clicking the "Estimate Price" button will return the alert "Please fill in all fields to get a forecast!"
-4. After filling in all the fields, click on the “Estimate Price” button to obtain the predicted price of the property.
-5. View the results: The predicted price will be displayed on the screen, providing an estimate based on the input data. Example: "Forecasted Price: €557642.1".
-6. Click on the "Clear Fields" button so that all fields are reset.
-
-### Importance of the Project
-Predicting property prices accurately is crucial for various stakeholders in the real estate market. This project leverages machine learning to provide reliable price estimates, which can help:
-
-- Buyers: Make informed decisions about purchasing properties.
-- Real Estate Agents: Provide accurate price recommendations to clients.
-- Developers: Evaluate potential investments and project profitability. By using this project, users can gain insights into property pricing trends in Paris and make better financial decisions.
-This project serves as an excellent example of applying MLOps principles to a real-world problem, demonstrating the integration of data science, machine learning, and operational processes to deliver valuable insights and solutions.
-
----------------------------------------------------
-
-### Project Best Practices
-- ✅ Problem description: The project is well described and it's clear and understandable.
-- ✅ Experiment tracking and model registry: Both experiment tracking and model registry are used.
-- ✅ Workflow orchestration: Fully deployed workflow.
-- ✅ Model deployment: The model deployment code is containerized and can be deployed to the cloud.
-- ✅ Model monitoring: Basic model monitoring that calculates and reports metrics.
-- ✅ Reproducibility: Instructions are clear, it's easy to run the code, and it works. The versions for all the dependencies are specified.
-- ✅ Visualização do projeto prático no Vercel.
-
----------------------------------------------------
-
-### Acknowledgments
-This project was developed as part of the MLOps Zoomcamp course by DataTalks.Club. Special thanks to the course instructors and the community for their support and guidance.
+- 1. Fill in all fields with property information: Enter information about the property in the input fields provided in the interface. Only positive numbers are allowed.
+- 2. For fields where there is no information to be entered, they must be filled in with 0, indicating the absence.
+- 3. If any field is not filled in, clicking the `"Estimate Price"` button will return the alert `"Please fill in all fields to get a forecast!"`
+- 4. After filling in all the fields, click on the `“Estimate Price”` button to obtain the predicted price of the property.
+- 5. The predicted price will be displayed on the screen, providing an estimate based on the input data. Example: `"Forecasted Price: €557642.1"`.
+- 6. Click on the `"Clear Fields"` button so that all fields are reset.
+ 
+--------------------------------------------------
 
 
 
